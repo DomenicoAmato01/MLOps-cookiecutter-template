@@ -29,5 +29,5 @@ pip install cookiecutter
 
 Then, run the following command to generate your project:
 ```bash
-cookiecutter gh:TUO-USERNAME/cookiecutter-medical-segmentation
+cookiecutter gh:YOUR-USERNAME/cookiecutter-medical-segmentation
 ```
