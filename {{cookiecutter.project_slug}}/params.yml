@@ -1,0 +1,22 @@
+# Parametri di base
+seed: 42
+data:
+  raw_path: "data/raw"
+  processed_path: "data/processed"
+
+# Preprocessing
+preprocessing:
+  img_size: [256, 256]
+  normalization: "minmax"
+
+# Training
+training:
+  epochs: 50
+  batch_size: 16
+  learning_rate: 0.001
+  optimizer: "Adam"
+
+# Architettura Modello
+model:
+  in_channels: 3
+  out_channels: 1
