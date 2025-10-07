@@ -1,0 +1,44 @@
+# Nome dell'ambiente Conda
+name: {{ cookiecutter.project_slug }}
+
+# Canali da cui Conda scaricherà i pacchetti
+channels:
+  - pytorch
+  - conda-forge
+  - defaults
+
+# Elenco delle dipendenze
+dependencies:
+  # --- Core & Data Science ---
+  - python={{ cookiecutter.python_version }}
+  - numpy
+  - pandas
+  - scikit-learn
+  - matplotlib
+  - seaborn
+  - jupyterlab
+
+  # --- Framework di Deep Learning (PyTorch) ---
+  - pytorch
+  - torchvision
+  - torchaudio
+
+  # --- Librerie per Image Processing ---
+  - pillow
+  - opencv
+  - scikit-image
+  - albumentations
+
+  # --- Strumenti MLOps ---
+  - dvc[ssh] # <<< MODIFICATO QUI per supporto SSH
+  - mlflow
+  - cookiecutter
+
+  # --- Qualità del Codice e Utility ---
+  - pyyaml
+  - flake8
+  - black
+  - pytest
+
+  # --- Dipendenze installate con Pip ---
+  - pip
