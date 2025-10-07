@@ -9,7 +9,7 @@
 - **Nome Modello:** ML Model
 - **Versione:** 1.0
 - **Sviluppato da:** {{ cookiecutter.author_name }}
-- **Data:** {{ now() | strftime('%Y-%m-%d') }}
+- **Data:** {{ now('utc').strftime('%Y-%m-%d') }}
 - **Tipo di Modello:** Architettura ML
 - **Informazioni di Contatto:** [Email o team di contatto]
 
