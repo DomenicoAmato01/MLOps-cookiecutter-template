@@ -5,5 +5,6 @@
     "description": "A robust MLOps template",
     "python_version": "3.12",
     "mlflow_tracking_uri": "mlruns",
-    "dvc_remote_storage": "ssh://user@example.com:2222/path"
+    "dvc_remote_storage": "ssh://user@example.com:2222/path",
+    "_extensions": ["jinja2_time.TimeExtension"]
 }
